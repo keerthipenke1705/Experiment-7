@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello World Example</title>
+  <style>
+    /* CSS Part */
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #38bdf8, #6366f1);
+      color: white;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      font-size: 3rem;
+      padding: 20px;
+      background: rgba(0,0,0,0.2);
+      border-radius: 10px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <!-- HTML Part -->
+  <h1 id="message">Hello World (HTML)</h1>
+
+  <!-- JavaScript Part -->
+  <script>
+    // Change the message dynamically
+    setTimeout(() => {
+      document.getElementById("message").textContent = "Hello World (JavaScript)";
+    }, 2000);
+  </script>
+</body>
+</html>
